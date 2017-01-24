@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Došilović family">
+  <meta name="keywords" content="Došilović">
+  <meta name="author" content="Herman Zvonimir Došilović">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Došilović Family</title>
+  
+  <link rel="stylesheet" type="text/css" href="./css/flexboxgrid.min.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+  <style>
+    body {
+      padding: 20px 60px 20px 60px;
+      background: #eee;
+      font-family: "Trebuchet MS", Helvetica, sans-serif
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 20px;
+      }
+    }
+    
+    .person-card {
+      padding: 10px;
+    }
+    
+    .person-card > .box {
+      min-height: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    
+    .person-card > .box:hover {
+      -moz-box-shadow:    0 0 50px #aaa;
+      -webkit-box-shadow: 0 0 50px #aaa;
+      box-shadow:         0 0 50px #aaa;  
+      margin-top: -5px;
+      cursor: pointer;
+    }
+
+    .person-image {
+      padding: 40px;
+    }
+
+    .person-image > img {
+      max-width: 100%;
+      border-radius: 100%;
+      border: 5px solid white;
+    }
+
+    .person-name {
+      min-height: 200px;
+      padding: 40px;
+      font-size: 3em;
+      color: #333;
+    }
+
+    .person-description {
+      padding: 0px 10px 40px 10px;
+      font-size: 1.5em;
+      color: #666;
+    }
+    
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
+
+    a.box {
+      display: block;
+      text-decoration: none;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="person-card col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <a class="box" href="http://hermanz.dosilovic.com">
+        <div class="row">
+          <div class="person-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <img alt="Herman Zvonimir Došilović" src="./img/herman.jpg">
+          </div>
+          <div class="person-name col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class=box">
+              Herman Zvonimir Došilović
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="person-card col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <a class="box" href="https://www.facebook.com/filip.dosilovic">
+        <div class="row">
+          <div class="person-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <img alt="Filip Karlo Došilović" src="./img/filip.jpg">
+          </div>
+          <div class="person-name col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class=box">
+              Filip Karlo Došilović
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="person-card col-xs-12 col-sm-6 col-md-4 col-lg-4">
+      <a class="box" href="https://www.facebook.com/ivanp.dosilovic">
+        <div class="row">
+          <div class="person-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <img alt="Ivan Pavao Došilović" src="./img/ivan.jpg">
+          </div>
+          <div class="person-name col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class=box">
+              Ivan Pavao Došilović
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
