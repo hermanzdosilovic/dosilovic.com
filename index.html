@@ -1,130 +1,92 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="description" content="Došilović family">
-  <meta name="keywords" content="Došilović">
-  <meta name="author" content="Herman Zvonimir Došilović">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Došilović family">
+        <meta name="keywords" content="Došilović">
+        <meta name="author" content="Herman Zvonimir Došilović">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Došilović Family</title>
-  
-  <link rel="stylesheet" type="text/css" href="./css/flexboxgrid.min.css">
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <title>Došilović Family</title>
 
-  <style>
-    body {
-      padding: 20px 60px 20px 60px;
-      background: #eee;
-      font-family: "Trebuchet MS", Helvetica, sans-serif
-    }
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/flexboxgrid.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <style>
+            body, html {
+                height: 100%;
+            }
+            .container-fluid {
+                margin: 0 auto;
+            }
+            .card {
+                transition: all 600ms ease;
+                margin: 10px;
+                padding: 0px;
+                border: 1px solid rgba(0,0,0,.125);
+                border-top: none;
+                border-left: none;
+                border-right: none;
+            }
 
-    @media (max-width: 768px) {
-      body {
-        padding: 20px;
-      }
-    }
-    
-    .person-card {
-      padding: 10px;
-    }
-    
-    .person-card > .box {
-      min-height: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      text-align: center;
-    }
-    
-    .person-card > .box:hover {
-      -moz-box-shadow:    0 0 50px #aaa;
-      -webkit-box-shadow: 0 0 50px #aaa;
-      box-shadow:         0 0 50px #aaa;  
-      margin-top: -5px;
-      cursor: pointer;
-    }
+            .card:hover {
+                -webkit-box-shadow: 2px 4px 15px 5px rgba(0,0,0,0.45);
+                -moz-box-shadow: 2px 4px 15px 5px rgba(0,0,0,0.45);
+                box-shadow: 2px 4px 15px 5px rgba(0,0,0,0.45);
+                transform: translateY(-5px); 
+            }
 
-    .person-image {
-      padding: 40px;
-    }
-
-    .person-image > img {
-      max-width: 100%;
-      border-radius: 100%;
-      border: 5px solid white;
-    }
-
-    .person-name {
-      min-height: 200px;
-      padding: 40px;
-      font-size: 3em;
-      color: #333;
-    }
-
-    .person-description {
-      padding: 0px 10px 40px 10px;
-      font-size: 1.5em;
-      color: #666;
-    }
-    
-    *, *:before, *:after {
-      box-sizing: border-box;
-    }
-
-    a.box {
-      display: block;
-      text-decoration: none;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="row">
-    <div class="person-card col-xs-12 col-sm-6 col-md-4 col-lg-4">
-      <a class="box" href="http://hermanz.dosilovic.com">
-        <div class="row">
-          <div class="person-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <img alt="Herman Zvonimir Došilović" src="./img/herman.jpg">
-          </div>
-          <div class="person-name col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="box">
-              Herman Zvonimir Došilović
+            .image {
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                border-style: solid;
+                border-color: #F7F7F7;
+                border-width: 2px 2px 0px;
+            }
+            
+            a {
+                text-decoration: none !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <a class="card col-xl-2 .col-lg-12 col-md-12 col-sm-12 text-center" href="https://hermanz.dosilovic.com/">
+                    <img class="card-img-top" alt="Herman Zvonimir Došilović" src="./img/herman.jpg">
+                    <div class="card-header">
+                        <h5 class="card-title">Computer Science Student at FER</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Herman Zvonimir</h5>
+                        <p class="card-text">Bachelor of Science</p>
+                    </div>
+                </a>
+                <a class="card col-xl-2 .col-lg-12 col-md-12 col-sm-12 text-center" href="https://www.linkedin.com/in/filip-karlo-došilović-6a082510b/">
+                    <img class="card-img-top" alt="Filip Karlo Došilović" src="./img/filip-new.jpg">
+                    <div class="card-header">
+                        <h5 class="card-title">Computer Science Student at FER</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Filip Karlo</h5>
+                        <p class="card-text">Bachelor of Science</p>
+                    </div>
+                </a>
+                <a class="card col-xl-2 .col-lg-12 col-md-12 col-sm-12 text-center" href="https://ivanp.dosilovic.com">
+                    <img class="card-img-top" alt="Ivan Pavao Došilović" src="./img/ivan-new.jpg">
+                    <div class="card-header">
+                        <h5 class="card-title">Electrical Technician Student at ESOS</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ivan Pavao</h5>
+                        <p class="card-text">Electrical Mechanic</p>
+                    </div>
+                </a>
             </div>
-          </div>
         </div>
-      </a>
-    </div>
-
-    <div class="person-card col-xs-12 col-sm-6 col-md-4 col-lg-4">
-      <a class="box" href="https://www.facebook.com/filip.dosilovic">
-        <div class="row">
-          <div class="person-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <img alt="Filip Karlo Došilović" src="./img/filip.jpg">
-          </div>
-          <div class="person-name col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="box">
-              Filip Karlo Došilović
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-
-    <div class="person-card col-xs-12 col-sm-6 col-md-4 col-lg-4">
-      <a class="box" href="http://ivanp.dosilovic.com">
-        <div class="row">
-          <div class="person-image col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <img alt="Ivan Pavao Došilović" src="./img/ivan.jpg">
-          </div>
-          <div class="person-name col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <div class="box">
-              Ivan Pavao Došilović
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-</body>
+    </body>
 </html>
